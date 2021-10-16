@@ -12,6 +12,7 @@ namespace watariTestProject
 {
     public partial class Form1 : Form
     {
+        public Boolean Testbool;
         public Form1()
         {
             InitializeComponent();
@@ -19,6 +20,21 @@ namespace watariTestProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Testbool)
+            {
+                Testbool = false;
+            }
+            else {
+                Testbool = true;
+            }
+            textBox1.Text = Testbool.ToString();
+
+
 
         }
     }
